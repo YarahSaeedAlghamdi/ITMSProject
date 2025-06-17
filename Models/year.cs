@@ -47,9 +47,9 @@ public class Year
 
     public static List<Year> GetYear()
     {
-
+        return yearList;
     }
-
+    
     public static Year GetYear(string code)
     {
         return yearList.FirstOrDefault(x => x.yearCode == code);
