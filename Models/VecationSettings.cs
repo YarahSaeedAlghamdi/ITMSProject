@@ -1,5 +1,11 @@
 public class VacationSettings
 {
+
+
+
+    /// <summary>
+    /// //
+    /// </summary>
     private int MaxDays; 
     private int MinDays;  
     private string VacationName;  
