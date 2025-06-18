@@ -5,23 +5,10 @@ public class User
     private string userName;
     private string userEmail;
     private string userPassword;
+    private College college;
 
-    public bool Login(string username, string password)
-    {
-        return (username == userName) && (password == userPassword);
-    }
-
-    public void LogOut()
-    {
-
-        Console.WriteLine("you had logged out successfully ");
-    }
-
-    public override void navigateToHome()
-    {
-    }
-
-    public int UserID
+    //---------------------------------------------------------------------------
+        public int UserID
     {
         get { return userID; }
         set { userID = value; }
@@ -48,7 +35,30 @@ public class User
     public string UserPassword
     {
         get { return userPassword; }
-        set { userPassword = value; }   
+        set { userPassword = value; }
     }
+    public College College
+    {
+        get { return college; }
+        set { college = value; }
+    }
+    //-------------------------------------------------------------------------------
+
+    public bool Login(string username, string password)
+    {
+        return (username == userName) && (password == userPassword);
+    }
+
+    public void LogOut()
+    {
+
+        Console.WriteLine("you had logged out successfully ");
+    }
+
+    public override void navigateToHome()
+    {
+    }
+
+
 
 } 
