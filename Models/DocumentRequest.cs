@@ -118,10 +118,6 @@ public Student StudentObj
     {
     }
 
-    public void cancelRequest()
-    {
-    }
-
     public void InProgress()
     {
     }
