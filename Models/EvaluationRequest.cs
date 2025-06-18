@@ -1,47 +1,94 @@
-
-    public class EvaluationRequest : IApprovalStatus
+//Razan Saud
+public class EvaluationRequest : IApprovalStatus
+{
+    private int RequestIDEvaluation { get; set; }
+    public Student Student { get; init; } = new Student();
+    public StudentSchedule StudentSchedule { get; init; } = new StudentSchedule();
+    public EvaluationSetting EvaluationSetting { get; init; } = new EvaluationSetting();
+    private DateTime EvaluationPeriodFrom { get; set; }
+    private DateTime EvaluationPeriodTo { get; set; }
+    public Admin Evaluator { get; set; } = new Admin();
+    public string FileUpload { get; set; } = string.Empty;
+    public enum StatusEnum
     {
-        public int               RequestIDEvaluation  { get; set; }
-        public Student           Student              { get; init; } = new Student();
-        public StudentSchedule   StudentSchedule      { get; init; } = new StudentSchedule();
-        public EvaluationSetting EvaluationSetting    { get; init; } = new EvaluationSetting();
-        public DateTime          EvaluationPeriodFrom { get; set; }
-        public DateTime          EvaluationPeriodTo   { get; set; }
-        public Admin             Evaluator            { get; set; } = new Admin();
-        public string            FileUpload           { get; set; } = string.Empty;
-        public EvaluationStatus  Status               { get; private set; }
-            = EvaluationStatus.NewRequest;
+        NewRequest,
+        Approved,
+        Rejected
 
-        // مخزن مؤقت
-        private static readonly List<EvaluationRequest> _all
-            = new List<EvaluationRequest>();
-
-        public void CreateEvaluationRequest()
-        {
-            _all.Add(this);
-            Student.EvaluationRequests.Add(this);
-            StudentSchedule.EvaluationRequests.Add(this);
-        }
-
-        public static EvaluationRequest? GetEvaluationRequest(int id) =>
-            _all.Find(r => r.RequestIDEvaluation == id);
-
-        public static void DeleteEvaluationRequest(int id) =>
-            _all.RemoveAll(r => r.RequestIDEvaluation == id);
-
-        // ==== IApprovalStatus Implementation ====
-        public void ApproveRequest()   => Status = EvaluationStatus.Approved;
-        public void RejectRequest()    => Status = EvaluationStatus.Rejected;
-        public void ReturnRequest()    => Status = EvaluationStatus.NewRequest;
-        public void InProgress()       => Status = EvaluationStatus.InProgress;
-        public void NewRequest()       => Status = EvaluationStatus.NewRequest;
-
-        // Helpers للطباعة
-        public void PrintEmptyEvaluationForm() =>
-            Console.WriteLine("[Empty Evaluation Form]");
-
-        public void PrintEvaluationResult() =>
-            Console.WriteLine($"Req {RequestIDEvaluation} → {Status}");
     }
 
+    public EvaluationRequest(
+          int requestId,
+          Student student,
+          StudentSchedule studentSchedule,
+          EvaluationSetting evaluationSetting,
+          DateTime evaluationPeriodFrom,
+          DateTime evaluationPeriodTo,
+          Admin evaluator,
+          string fileUpload)
+    {
+        RequestIDEvaluation = requestId;
+        Student = student;
+        StudentSchedule = studentSchedule;
+        EvaluationSetting = evaluationSetting;
+        EvaluationPeriodFrom = evaluationPeriodFrom;
+        EvaluationPeriodTo = evaluationPeriodTo;
+        Evaluator = evaluator;
+        FileUpload = fileUpload;
+        Status = EvaluationStatus.NewRequest;
+    }
+
+
+
+
+    public void CreateEvaluationRequest()
+    {
+
+    }
+
+
+    public static void DeleteEvaluationRequest(int id)
+    {
+
+    }
+
+    public void PrintEmptyEvaluationForm()
+    {
+    }
+
+
+    public void PrintEvaluationResult(int requestId)
+    {
+    }
+
+
+    public List<string> GetEvaluationResult() { }
+
+
+
+    public static EvaluationRequest GetEvaluationRequest(StudentSchedule scheduleFrom) { }
+
+
+
+
+
+
+    public void approveRequest()
+    {
+
+    }
+
+    public void rejectRequest()
+    {
+
+    }
+
+    public void returnRequest()
+    {
+
+    }
+
+
+
+}
 
