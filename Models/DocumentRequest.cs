@@ -1,99 +1,135 @@
+
+
 public enum DocumentStatus
 {
     Rejected,
     Approved,
     NewRequest
 }
-public class DocumentRequest
-{
+
+public class DocumentRequest : IapprovalStatus{
 //------------------------------------------------------------------------------------------------
-    private Student StudentObj;
-    private int DocumentRequestID;
-    private DocumentSetting DocumentSettingObj;
-    private DocumentStatus DocumentStatus;
-    private DateTime CreateDate;
-    private string UploadedFilePath;
-    bool IsDeleted;
+   private Student studentObj;
+    private int documentRequestID;
+    private DocumentSetting documentSettingObj;
+    private DocumentStatus documentStatus;
+    private DateTime createDate;
+    private string uploadedDocumentPath;
+    private bool IsDeleted;
+
     
 
 //------------------------------------------------------------------------------------------------
     public void CreateDocumentRequest(string filePath)
     {
-        DocumentStatus = DocumentStatus.NewRequest;
-        CreateDate = DateTime.Now;
-	    ploadedFilePath = filePath;
+        documentStatus = DocumentStatus.NewRequest;
+        createDate = DateTime.Now;
+        uploadedDocumentPath = filePath;
 
-        Console.WriteLine("Document request with ID : {DocumentRequestID} has been created and your file has been uploaded successfully .");
+        Console.WriteLine($"[Created] Document Request ID: {documentRequestID} | Status: {documentStatus} | File: {filePath}");
     }
 //------------------------------------------------------------------------------------------------
 
-    public void UpdateDocumentRequest(string newFilePath, DocumentSetting newSetting)
+     public void UpdateDocumentRequest(string newFilePath, DocumentSetting newSetting)
     {
-        if (newFilePath != null)
+        if (!string.IsNullOrEmpty(newFilePath))
         {
-            UploadedFilePath = newFilePath;
-            Console.WriteLine($"Your file has been changed to: {newFilePath}");
+            uploadedDocumentPath = newFilePath;
+            Console.WriteLine($"[Updated File] Document Request ID: {documentRequestID} | New File: {newFilePath}");
         }
 
         if (newSetting != null)
         {
-            DocumentSettingObj = newSetting;
-            Console.WriteLine($"Your new Document setting has been updated to: {newSetting.DocumentType}");
+            documentSettingObj = newSetting;
+            Console.WriteLine($"[Updated Setting] Document Request ID: {documentRequestID} | New Type: {newSetting.DocumentType}");
         }
-
-        Console.WriteLine($" Document request with ID: {DocumentRequestID} has been updated and Your new file has been uploaded successfully .");
     }
 //------------------------------------------------------------------------------------------------
-    public void DeleteDocumentRequest_1()
+
+    public void DeleteDocumentRequest(List<DocumentRequest> allRequests)
     {
-        // Logic to delete: simulate by clearing fields
-        StudentObj = null;
-        DocumentSettingObj = null;
-        DocumentStatus = default;
-        CreateDate = default;
-        Console.WriteLine($" Your Document request with ID : {DocumentRequestID} has been deleted successfully.");
+        isDeleted = true;
+        allRequests.Remove(this);
+        Console.WriteLine($"[Deleted] Request ID: {documentRequestID} has been removed.");
     }
-
-   public void DeleteDocumentRequest_2(List<DocumentRequest> allRequests)
-   {
-    allRequests.Remove(this);
-    Console.WriteLine($" Your Document request with ID : {DocumentRequestID} has been deleted successfully.");
-   }
-
-   public void DeleteDocumentRequest_3(List<DocumentRequest> allRequests)
-   {
-    IsDeleted = true;
-    Console.WriteLine($" Your Document request with ID : {DocumentRequestID} has been deleted successfully.");
-   }
 
 //------------------------------------------------------------------------------------------------
 
     public int GetDocumentRequestID()
     {
-        return DocumentRequestID;
+        return documentRequestID;
     }
 //------------------------------------------ i am not sure: ------------------------------------------------------
 
+    // ---------- IapprovalStatus Interface Method Implementations ----------
     public void ApproveRequest()
     {
-        DocumentStatus = DocumentStatus.Approved;
-        Console.WriteLine($"[Approved] Document Request ID: {DocumentRequestID}, Status: {DocumentStatus}");
-
+        documentStatus = DocumentStatus.Approved;
+        Console.WriteLine($"[Approved] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
 
     public void RejectRequest()
     {
-        DocumentStatus = DocumentStatus.Rejected;
-        Console.WriteLine($"[Rejected] Document Request ID: {DocumentRequestID}, Status: {DocumentStatus}");
-
+        documentStatus = DocumentStatus.Rejected;
+        Console.WriteLine($"[Rejected] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
+
+    public void ReturnRequest()
+    {
+            }
 
     public void InProgress()
     {
-        DocumentStatus = DocumentStatus.Rejected;
-        Console.WriteLine($"[In Progress] Document Request ID: {DocumentRequestID} is being processed. Current Status: {DocumentStatus}");
-
+        
+    public void NewRequest()
+    {
+        documentStatus = DocumentStatus.NewRequest;
+        Console.WriteLine($"[New] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
+}
+
 
 //------------------------------------------------------------------------------------------------
+public Student StudentObj
+    {
+        get => studentObj;
+        set => studentObj = value;
+    }
+
+    public int DocumentRequestID
+    {
+        get => documentRequestID;
+        set => documentRequestID = value;
+    }
+
+    public DocumentSetting DocumentSettingObj
+    {
+        get => documentSettingObj;
+        set => documentSettingObj = value;
+    }
+
+    public DocumentStatus DocumentStatus
+    {
+        get => documentStatus;
+        set => documentStatus = value;
+    }
+
+    public DateTime CreateDate
+    {
+        get => createDate;
+        set => createDate = value;
+    }
+
+    public string UploadedDocumentPath
+    {
+        get => uploadedDocumentPath;
+        set => uploadedDocumentPath = value;
+    }
+
+    public bool IsDeleted
+    {
+        get => isDeleted;
+        set => isDeleted = value;
+    }
+//-----------------------------------------------------------------------------------------------------
 }
