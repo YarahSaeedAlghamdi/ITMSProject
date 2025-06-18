@@ -1,6 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 
 public class Year
 {
@@ -15,20 +13,13 @@ public class Year
 
 
     // Constructor 
-    public Year(string code, int group, string desc, string hijri, string gregorian, DateTime start, DateTime end, bool active)
+    public Year( )
     {
-        this.yearCode = code;
-        this.group = group;
-        this.description = desc;
-        this.hijriDate = hijri;
-        this.gregorianDate = gregorian;
-        this.startDate = start;
-        this.endDate = end;
-        this.isActive = active;
-    }
-    
 
-        // الدوال العامة (Public Methods)
+    }
+
+
+    // الدوال العامة (Public Methods)
 
     public static void CreateYear()
     {
@@ -45,15 +36,23 @@ public class Year
 
     }
 
-    public static List<Year> GetYear()
+    public static List<Year> GetYear(List<Year> yearList)
     {
         return yearList;
     }
-    
+
     public static Year GetYear(string code)
     {
-        return yearList.FirstOrDefault(x => x.yearCode == code);
+        List<Year> s = GetYear();
+
+        return s.getYearCode();     
     }
+    
+    public static Year GetYear(List<Year> yearList, string code)
+    {
+    return yearList.FirstOrDefault(x => x.yearCode == code);
+    }
+
 }
 
 
