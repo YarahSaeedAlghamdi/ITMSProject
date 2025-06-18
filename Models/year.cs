@@ -37,7 +37,7 @@ public class Year
 
     }
 
-    public List<Year> GetYear(List<Year> yearList)
+    public Year GetYear(List<Year> yearList)
     {
         return yearList;
     }
