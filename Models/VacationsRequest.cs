@@ -2,6 +2,7 @@
 
 public class VacationRequest : IApprovalStatus
 {
+    
     private StudentSchedule studentSchedule;
     private VacationSettings vacationSettings;
     private DateTime startDate;
