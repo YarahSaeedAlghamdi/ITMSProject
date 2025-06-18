@@ -1,3 +1,4 @@
+using System;
 
 
 public class Year
@@ -21,36 +22,35 @@ public class Year
 
     // الدوال العامة (Public Methods)
 
-    public static void CreateYear()
+    public void CreateYear()
     {
 
     }
 
-    public static void UpdateYear()
+    public void UpdateYear()
     {
 
     }
 
-    public static void DeleteYear()
+    public void DeleteYear()
     {
 
     }
 
-    public static List<Year> GetYear(List<Year> yearList)
+    public List<Year> GetYear(List<Year> yearList)
     {
         return yearList;
     }
 
-    public static Year GetYear(string code)
-    {
-        List<Year> s = GetYear();
 
-        return s.getYearCode();     
-    }
-    
-    public static Year GetYear(List<Year> yearList, string code)
+    public Year GetYear(List<Year> yearList, string code)
     {
-    return yearList.FirstOrDefault(x => x.yearCode == code);
+        foreach (Year y in yearList)
+        {
+            if (y.yearCode == code)
+                return y;
+        }
+        return null;
     }
 
 }

@@ -1,10 +1,11 @@
+using System;
 
 public class RegistrationTime
 {
     
-    private Year year;
-    private int group;
-    private string timeCode;
+    public Year year;
+    public int group;
+    public string timeCode;
     private string timeDescription;
     private int choicesCount;
     private DateTime startDate;
@@ -19,29 +20,34 @@ public class RegistrationTime
     }
 
 
-    public static void CreateRegistrationTime()
+    public void CreateRegistrationTime()
     {
 
     }
 
-    public static void UpdateRegistrationTime()
+    public void UpdateRegistrationTime()
     {
 
     }
 
-    public static void DeleteRegistrationTime()
+    public DeleteRegistrationTime()
     {
 
     }
 
-    public static List<RegistrationTime> GetRegistrationTime(List<RegistrationTime> list)
+    public List<RegistrationTime> GetRegistrationTime(List<RegistrationTime> list)
     {
         return list;
     }
 
-
-    public static void GetRegistrationTime(string timeCode, Year year, int group)
+    public static RegistrationTime GetRegistrationTime(List<RegistrationTime> list, string timeCode, Year year, int group)
     {
-
+        foreach (RegistrationTime r in list)
+        {
+            if (r.TimeCode == timeCode && r.Year == year && r.Group == group)
+                return r;
+        }
+        return null;
     }
+
 }

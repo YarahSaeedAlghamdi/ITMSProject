@@ -1,21 +1,21 @@
 public class VacationSettings
 {
-    private int MaxDays;
-    private int MinDays;
-    private string VacationName;
-    private int NumberOfVacations;
-    private bool IsRepeatVacationPeriod;
-    private bool IsActiveVacation;
+    private int maxDays;
+    private int minDays;
+    private string vacationName;
+    private int numberOfVacations;
+    private bool isRepeatVacationPeriod;
+    private bool isActiveVacation;
 
-    public void CreateVacation()
+    public void createVacation()
     {
          }
 
-    public void UpdateVacation()
+    public void updateVacation()
     {
          }
 
-    public void DeleteVacation()
+    public void deleteVacation()
     {
           }
 }

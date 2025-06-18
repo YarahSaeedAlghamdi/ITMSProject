@@ -7,6 +7,7 @@ public class User
     private string UserName;
     private string UserEmail;
     private string UserPassword;
+<<<<<<< HEAD
 
     // Constructor to initialize the user
     public User(int userId, string role, string name, string email, string password)
@@ -17,6 +18,8 @@ public class User
         UserEmail = email;
         UserPassword = password;
     }
+=======
+>>>>>>> 45f6ee20444e5d8aa803dca2a2d7fbc85e65924c
 
     public bool Login(string username, string password)
     {
@@ -25,6 +28,7 @@ public class User
 
     public void LogOut()
     {
+<<<<<<< HEAD
         Console.WriteLine("You have logged out successfully.");
     }
 }
@@ -54,4 +58,14 @@ public class Program
             Console.WriteLine("Invalid credentials.");
         }
     }
+=======
+
+        Console.WriteLine("you had logged out successfully ");
+    }
+    public override void navigateToHome()
+    {
+       
+    }
+
+>>>>>>> 45f6ee20444e5d8aa803dca2a2d7fbc85e65924c
 }
