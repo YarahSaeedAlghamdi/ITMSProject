@@ -16,6 +16,7 @@ public class User
 
         Console.WriteLine("you had logged out successfully ");
     }
+
     public override void navigateToHome()
     {
     }
@@ -47,14 +48,7 @@ public class User
     public string UserPassword
     {
         get { return userPassword; }
-        set { userPassword = value; }
+        set { userPassword = value; }   
     }
-    
-
-    public static void Main(string[] args)
-    {
-
-    }
-    
 
 } 
