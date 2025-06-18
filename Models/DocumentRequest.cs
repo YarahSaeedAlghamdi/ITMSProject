@@ -7,9 +7,9 @@ public enum DocumentStatus
     NewRequest
 }
 
-public class DocumentRequest : IapprovalStatus{
-//------------------------------------------------------------------------------------------------
-   private Student studentObj;
+public class DocumentRequest : IapprovalStatus {
+    //------------------------------------------------------------------------------------------------
+    private Student studentObj;
     private int documentRequestID;
     private DocumentSetting documentSettingObj;
     private DocumentStatus documentStatus;
@@ -17,9 +17,9 @@ public class DocumentRequest : IapprovalStatus{
     private string uploadedDocumentPath;
     private bool IsDeleted;
 
-    
 
-//------------------------------------------------------------------------------------------------
+
+    //------------------------------------------------------------------------------------------------
     public void CreateDocumentRequest(string filePath)
     {
         documentStatus = DocumentStatus.NewRequest;
@@ -28,9 +28,9 @@ public class DocumentRequest : IapprovalStatus{
 
         Console.WriteLine($"[Created] Document Request ID: {documentRequestID} | Status: {documentStatus} | File: {filePath}");
     }
-//------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------
 
-     public void UpdateDocumentRequest(string newFilePath, DocumentSetting newSetting)
+    public void UpdateDocumentRequest(string newFilePath, DocumentSetting newSetting)
     {
         if (!string.IsNullOrEmpty(newFilePath))
         {
@@ -44,7 +44,7 @@ public class DocumentRequest : IapprovalStatus{
             Console.WriteLine($"[Updated Setting] Document Request ID: {documentRequestID} | New Type: {newSetting.DocumentType}");
         }
     }
-//------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------
 
     public void DeleteDocumentRequest(List<DocumentRequest> allRequests)
     {
@@ -53,13 +53,13 @@ public class DocumentRequest : IapprovalStatus{
         Console.WriteLine($"[Deleted] Request ID: {documentRequestID} has been removed.");
     }
 
-//------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------
 
     public int GetDocumentRequestID()
     {
         return documentRequestID;
     }
-//------------------------------------------ i am not sure: ------------------------------------------------------
+    //------------------------------------------ i am not sure: ------------------------------------------------------
 
     // ---------- IapprovalStatus Interface Method Implementations ----------
     public void ApproveRequest()
@@ -76,17 +76,19 @@ public class DocumentRequest : IapprovalStatus{
 
     public void ReturnRequest()
     {
-            }
+    }
 
     public void InProgress()
     {
-        
+    }
+
+
     public void NewRequest()
     {
         documentStatus = DocumentStatus.NewRequest;
         Console.WriteLine($"[New] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
-}
+
 
 
 //------------------------------------------------------------------------------------------------
