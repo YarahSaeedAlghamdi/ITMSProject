@@ -14,7 +14,7 @@ public class DocumentSettings
         Console.WriteLine("A new document has been created.");
     }
 
-    public List<DocumentSettings> getDocument()
+    public List<DocumentSettings> getDocument(List<DocumentSettings> List)
     {
         return new List<DocumentSettings>();
     }
