@@ -29,12 +29,12 @@ public class RegistrationTime
 
     }
 
-    public static void DeleteRegistrationTime()
+    public  void DeleteRegistrationTime()
     {
 
     }
 
-    public static List<RegistrationTime> GetRegistrationTime(List<RegistrationTime> list)
+    public List<RegistrationTime> GetRegistrationTime(List<RegistrationTime> list)
     {
         return list;
     }

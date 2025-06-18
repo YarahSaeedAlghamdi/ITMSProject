@@ -16,22 +16,22 @@ public class TrainingPeriod
     }
 
 
-    public static void CreateTrainingPeriod()
+    public void CreateTrainingPeriod()
     {
 
     }
 
-    public static void UpdateTrainingPeriod()
+    public void UpdateTrainingPeriod()
     {
 
     }
 
-    public static void DeleteTrainingPeriod()
+    public void DeleteTrainingPeriod()
     {
 
     }
 
-    public static List<TrainingPeriod> GetTrainingPeriod(List<TrainingPeriod> list)
+    public List<TrainingPeriod> GetTrainingPeriod(List<TrainingPeriod> list)
     {
         return list;
     }
