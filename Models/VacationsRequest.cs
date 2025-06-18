@@ -1,4 +1,6 @@
-public class VacationRequest
+
+
+public class VacationRequest : IApprovalStatus
 {
     private StudentSchedule studentSchedule;
     private VacationSettings vacationSettings;
@@ -33,4 +35,30 @@ public class VacationRequest
     {
        
     }
+
+    public void approveRequest()
+    {
+        
+    }
+
+    public void rejectRequest()
+    {
+       
+    }
+
+    public void returnRequest()
+    {
+        
+    } 
+
+    public void newRequest()
+    {
+       
+    }
+
+    public void inProgress()
+    {
+    }  
+
 }
+
