@@ -1,6 +1,6 @@
 public class Admin : User
 {
-    public override void NavigateToHome()
+    public override void navigateToHome()
     {
 
     }
