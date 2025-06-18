@@ -27,7 +27,7 @@ public class Hospital
     }
 
 
-    public static List<Hospital> GetYear(List<Hospital> hospitalList)
+    public List<Hospital> GetYear(List<Hospital> hospitalList)
     {
         return hospitalList;
     }
