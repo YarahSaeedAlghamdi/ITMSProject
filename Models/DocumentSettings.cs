@@ -7,28 +7,28 @@ public class DocumentSettings
     private string EnglishDocumentName;
     private string FormURL;
     private bool IsActiveDocument;
+    private College UserCollege ;
 
-    public void CreateNewDocument()
+    public void createDocumentSettings()
     {
         Console.WriteLine("A new document has been created.");
     }
 
-    public void GetDocument()
+    public List<DocumentSettings> getDocument()
     {
-        Console.WriteLine("Document has been retrieved.");
+        return new List<DocumentSettings>();
     }
 
-    public void GetDocument(int id)
+    public DocumentSettings getDocument(int id)
     {
-        Console.WriteLine($"Document with ID {id} has been retrieved.");
+        return new DocumentSettings(); 
     }
-
-    public void DeleteDocument()
+        public void deleteDocument()
     {
         Console.WriteLine("Document has been deleted.");
     }
 
-    public void UpdateDocument()
+    public void updateDocument()
     {
         Console.WriteLine("Document has been updated.");
     }

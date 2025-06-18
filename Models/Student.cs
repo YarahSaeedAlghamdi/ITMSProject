@@ -4,7 +4,7 @@ public class Student : User
     private double StudentGPA;
     private int StudentNumber; // SSN
 
-    public override void NavigateToHome()
+    public override void navigateToHome()
     {
        
     }
