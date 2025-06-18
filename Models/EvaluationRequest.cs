@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
 
-namespace EvaluationSystem
-{
     public class EvaluationRequest : IApprovalStatus
     {
         public int               RequestIDEvaluation  { get; set; }
@@ -47,5 +43,5 @@ namespace EvaluationSystem
         public void PrintEvaluationResult() =>
             Console.WriteLine($"Req {RequestIDEvaluation} → {Status}");
     }
-}
+
 

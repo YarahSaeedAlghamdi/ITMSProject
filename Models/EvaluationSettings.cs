@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
 
-namespace EvaluationSystem
-{
     public class EvaluationSetting
     {
         public int     EvaluationID    { get; set; }
@@ -31,7 +27,7 @@ namespace EvaluationSystem
         public static EvaluationSetting? GetEvaluationSetting(int id) =>
             _all.Find(e => e.EvaluationID == id);
     }
-}
+
 
 
 
