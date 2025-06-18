@@ -1,13 +1,16 @@
-public class VacationRequest
+
+
+public class VacationRequest : IApprovalStatus
 {
-    private StudentSchedule StudentSchedule;
-    private VacationSettings VacationSettings;
-    private DateTime StartDate;
-    private DateTime EndDate;
-    private DateTime CreateVacationDate;
-    private Student Student;
-    private int RequestVacationID;
-    private StatusEnum Status;
+    
+    private StudentSchedule studentSchedule;
+    private VacationSettings vacationSettings;
+    private DateTime startDate;
+    private DateTime endDate;
+    private DateTime createVacationDate;
+    private Student student;
+    private int requestVacationID;
+    private StatusEnum status;
 
     public enum StatusEnum
     {
@@ -16,21 +19,47 @@ public class VacationRequest
         Rejected
     }
 
-    public void CreateVacationRequest()
+    public void createVacationRequest()
     {
          }
 
-    public VacationRequest GetVacationRequest()
+    public VacationRequest getVacationRequest()
     {
         return this;
         }
 
-    public void DeleteVacationRequest()
+    public void deleteVacationRequest()
     {
         }
 
-    public void CancelVacationRequest()
+    public void cancelVacationRequest()
     {
        
     }
+
+    public void approveRequest()
+    {
+        
+    }
+
+    public void rejectRequest()
+    {
+       
+    }
+
+    public void returnRequest()
+    {
+        
+    } 
+
+    public void newRequest()
+    {
+       
+    }
+
+    public void inProgress()
+    {
+    }  
+
 }
+
