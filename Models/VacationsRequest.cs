@@ -9,7 +9,7 @@ public class VacationRequest : IApprovalStatus
     private DateTime endDate;
     private DateTime createVacationDate;
     private Student student;
-    private int requestVacationID;
+    private int VecationRequestID;
     private StatusEnum status;
 
     public enum StatusEnum
