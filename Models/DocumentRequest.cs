@@ -101,6 +101,12 @@ public Student StudentObj
         return documentRequestID;
     }
 
+    public DocumentRequest getDocumentRequest()
+    {
+        return this;
+    }
+
+
     // ---------- IapprovalStatus Interface Method Implementations ----------
     public void ApproveRequest()
     {
