@@ -1,8 +1,8 @@
 public class Student : User
 {
-    public string StudentPhoneNumber;
-    public double StudentGPA;
-    public int StudentNumber; // SSN
+    private string StudentPhoneNumber;
+    private double StudentGPA;
+    private int StudentNumber; // SSN
 
     public override void NavigateToHome()
     {

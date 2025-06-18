@@ -1,12 +1,12 @@
 public class DocumentSettings
 {
-    public int DocumentTypeID;
-    public List<string> DocumentFormat = new List<string>();
-    public int DocumentSize;
-    public string ArabicDocumentName;
-    public string EnglishDocumentName;
-    public string FormURL;
-    public bool IsActiveDocument;
+    private int DocumentTypeID;
+    private List<string> DocumentFormat = new List<string>();
+    private int DocumentSize;
+    private string ArabicDocumentName;
+    private string EnglishDocumentName;
+    private string FormURL;
+    private bool IsActiveDocument;
 
     public void CreateNewDocument()
     {
