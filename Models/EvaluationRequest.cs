@@ -62,7 +62,7 @@ public class EvaluationRequest : IApprovalStatus
     }
 
 
-    public List<string> GetEvaluationResult() { }
+    public EvaluationRequest GetEvaluationResult() { }
 
 
 
