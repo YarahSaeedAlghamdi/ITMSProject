@@ -2,7 +2,7 @@ namespace Models
 {
     public class DocumentSettings
     {
-        private int DocumentTypeID;
+        private int DdocumentTypeID;
         private List<string> DocumentFormat = new List<string>();
         private int DocumentSize;
         private string ArabicDocumentName;
@@ -10,6 +10,12 @@ namespace Models
         private string FormURL;
         private bool IsActiveDocument;
         private Collage UserCollege;
+
+      public int DocumentTypeID
+    {
+        get => DdocumentTypeID;
+        set => DdocumentTypeID = value;
+    }
 
         public void createDocumentSettings()
         {

@@ -86,7 +86,7 @@ public class DocumentRequest : IApprovalStatus {
         if (newSetting != null)
         {
             documentSettingObj = newSetting;
-            Console.WriteLine($"[Updated Setting] Document Request ID: {documentRequestID} | New Type: {newSetting.DocumentType}");
+            Console.WriteLine($"[Updated Setting] Document Request ID: {documentRequestID} | New Type: {newSetting.DocumentTypeID}");
         }
     }
     //------------------------------------------------------------------------------------------------
