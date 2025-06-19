@@ -9,7 +9,7 @@ namespace Models
         private string EnglishDocumentName;
         private string FormURL;
         private bool IsActiveDocument;
-        private College UserCollege;
+        private Collage UserCollege;
 
         public void createDocumentSettings()
         {
