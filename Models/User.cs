@@ -7,7 +7,7 @@ namespace Models
         private string userName;
         private string userEmail;
         private string userPassword;
-        private College college;
+        private Collage college;
 
         //---------------------------------------------------------------------------
         public int UserID
@@ -39,7 +39,7 @@ namespace Models
             get { return userPassword; }
             set { userPassword = value; }
         }
-        public College College
+        public Collage College
         {
             get { return college; }
             set { college = value; }

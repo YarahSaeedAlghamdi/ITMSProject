@@ -41,7 +41,7 @@ namespace Models
         {
             foreach (Period p in periodList)
             {
-                if (p.PeriodCode == periodCode)
+                if (p.periodCode == periodCode)
                     return p;
             }
             return null;
