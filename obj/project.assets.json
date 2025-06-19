@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
+    "C:\\Users\\sosoq\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\ITMSProject.csproj",
+      "projectUniqueName": "C:\\Users\\sosoq\\Desktop\\ITMSProject\\ITMSProject.csproj",
       "projectName": "ITMSProject",
-      "projectPath": "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\ITMSProject.csproj",
-      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\obj\\",
+      "projectPath": "C:\\Users\\sosoq\\Desktop\\ITMSProject\\ITMSProject.csproj",
+      "packagesPath": "C:\\Users\\sosoq\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sosoq\\Desktop\\ITMSProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sosoq\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
