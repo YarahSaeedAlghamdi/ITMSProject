@@ -44,12 +44,12 @@ public class User
     }
     //-------------------------------------------------------------------------------
 
-    public bool Login(string username, string password)
+    public bool login(string username, string password)
     {
         return (username == userName) && (password == userPassword);
     }
 
-    public void LogOut()
+    public void logOut()
     {
 
         Console.WriteLine("you had logged out successfully ");

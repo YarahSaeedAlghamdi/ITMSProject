@@ -4,7 +4,7 @@ public class DocumentRequest : IapprovalStatus {
 //------------------------------------------------------------------------------------------------
     private Student studentObj;
     private int documentRequestID;
-    private DocumentSetting documentSettingObj;
+    private DocumentSettings documentSettingObj;
     private DocumentStatus documentStatus;
     private DateTime createDate;
     private string uploadedDocumentPath;
