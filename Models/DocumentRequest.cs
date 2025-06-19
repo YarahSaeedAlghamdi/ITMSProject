@@ -11,7 +11,7 @@ public class DocumentRequest : IApprovalStatus {
     private Status documentStatus;
     private DateTime createDate;
     private string uploadedDocumentPath;
-    private bool isDeleted;
+    private bool isDeleted = false;
 
 
     //------------------------------------------------------------------------------------------------
@@ -65,10 +65,11 @@ public class DocumentRequest : IApprovalStatus {
         set => isDeleted = value;
     }
 //-----------------------------------------------------------------------------------------------------
-    public void createDocumentRequest(string filePath)
+    public void createDocumentRequest(string filePath , DocumentSettings newSetting)
     {
         documentStatus = Status.NewRequest;
         createDate = DateTime.Now;
+        documentSettingObj = newSetting;
         uploadedDocumentPath = filePath;
 
         Console.WriteLine($"[Created] Document Request ID: {documentRequestID} | Status: {documentStatus} | File: {filePath}");

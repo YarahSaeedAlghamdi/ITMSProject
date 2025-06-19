@@ -11,11 +11,12 @@ namespace Models
         private bool IsActiveDocument;
         private Collage UserCollege;
 
-      public int DocumentTypeID
-    {
-        get => documentTypeID;
-        set => documentTypeID = value;
-    }
+
+        public int DocumentTypeID
+        {
+            get => documentTypeID;
+            set => documentTypeID = value;
+        }
 
         public void createDocumentSettings()
         {
