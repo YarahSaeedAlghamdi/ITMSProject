@@ -1,5 +1,6 @@
 namespace EvaluationSystem.Models
 {
+    
     public class College
     {
         // === Private attributes ===
