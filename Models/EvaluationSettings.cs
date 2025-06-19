@@ -1,31 +1,30 @@
-public class EvaluationSetting
+namespace Models
 {
-    public int EvaluationID { get; set; }
-    public string EvaluationName { get; set; } = string.Empty;
-    public bool IsActive { get; set; }
-    public string Competency { get; set; } = string.Empty;
-    public string Definition { get; set; } = string.Empty;
-
-    // ✅ Association with Admin
-    public Admin CreatedBy { get; set; } = new Admin();
-
-    // ✅ NEW: Association with College
-    public College College { get; set; } = new College();
-
-    // In-memory storage
-    private static readonly List<EvaluationSetting> _all = new();
-
-    // Optional constructor
-    public EvaluationSetting(int id, string name, bool isActive, string competency, string definition, Admin createdBy, College college)
+    public class EvaluationSetting
     {
-        EvaluationID = id;
-        EvaluationName = name;
-        IsActive = isActive;
-        Competency = competency;
-        Definition = definition;
-        CreatedBy = createdBy;
-        College = college;
-    }
+        public int EvaluationID { get; set; }
+        public string EvaluationName { get; set; } = string.Empty;
+        public bool IsActive { get; set; }
+        public string Competency { get; set; } = string.Empty;
+        public string Definition { get; set; } = string.Empty;
+
+        public Admin CreatedBy { get; set; } = new Admin();
+        public Collage College { get; set; } = new Collage(); // fixed typo
+
+        // In-memory storage
+        private static readonly List<EvaluationSetting> _all = new();
+
+        // ✅ Fixed constructor to use Collage not College
+        public EvaluationSetting(int id, string name, bool isActive, string competency, string definition, Admin createdBy, Collage college)
+        {
+            EvaluationID = id;
+            EvaluationName = name;
+            IsActive = isActive;
+            Competency = competency;
+            Definition = definition;
+            CreatedBy = createdBy;
+            College = college;
+        }
 
         public void CreateEvaluationSetting() => _all.Add(this);
 
@@ -38,7 +37,7 @@ public class EvaluationSetting
         public static void DeleteEvaluationSetting(int id) =>
             _all.RemoveAll(e => e.EvaluationID == id);
 
-    public static EvaluationSetting? GetEvaluationSetting(int id) =>
-        _all.Find(e => e.EvaluationID == id);
+        public static EvaluationSetting? GetEvaluationSetting(int id) =>
+            _all.Find(e => e.EvaluationID == id);
+    }
 }
-
