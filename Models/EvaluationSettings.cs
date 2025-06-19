@@ -1,3 +1,4 @@
+// by  saja alharbi
 namespace Models
 {
     public class EvaluationSetting
@@ -9,12 +10,12 @@ namespace Models
         public string Definition { get; set; } = string.Empty;
 
         public Admin CreatedBy { get; set; } = new Admin();
-        public Collage College { get; set; } = new Collage(); // fixed typo
+        public Collage College { get; set; } = new Collage(); 
 
-        // In-memory storage
+        
         private static readonly List<EvaluationSetting> _all = new();
 
-        // ✅ Fixed constructor to use Collage not College
+        
         public EvaluationSetting()
         {
            
