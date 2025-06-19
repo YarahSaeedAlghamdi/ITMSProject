@@ -9,7 +9,7 @@ namespace Models
         public string Definition { get; set; } = string.Empty;
 
         public Admin CreatedBy { get; set; } = new Admin();
-        public College College { get; set; } = new College(); // fixed typo
+        public Collage College { get; set; } = new Collage(); // fixed typo
 
         // In-memory storage
         private static readonly List<EvaluationSetting> _all = new();
