@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITMSProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fb0a3d2b5e5efa6466435969569d6eeb67fa243")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7dbf94d46924488eb4bf7ed1d4e2dd67a00c8bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITMSProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITMSProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
