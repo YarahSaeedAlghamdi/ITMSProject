@@ -22,6 +22,8 @@ namespace Models
 
         public static EvaluateStudent GetEvaluationInfo(EvaluationRequest request)
         {
+
+            return new EvaluateStudent(request, 0, string.Empty, string.Empty);
         }
     }
 }
