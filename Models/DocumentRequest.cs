@@ -3,7 +3,7 @@ namespace Models
 {
     
 
-public class DocumentRequest : IapprovalStatus {
+public class DocumentRequest : IApprovalStatus {
 //------------------------------------------------------------------------------------------------
     private Student studentObj;
     private int documentRequestID;
