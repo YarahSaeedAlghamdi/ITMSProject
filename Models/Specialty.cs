@@ -37,7 +37,7 @@ namespace Models
         {
             foreach (Specialty s in specialtyList)
             {
-                if (s.SpecialtyCode == specialtyCode)
+                if (s.specialtyCode == specialtyCode)
                     return s;
             }
             return null;
