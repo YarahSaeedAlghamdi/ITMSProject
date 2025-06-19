@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\ITMSProject.csproj": {}
+    "/Users/yarahalghamdi/Developer/TrainingProjects /FirstWeekProjects/ITMSProject-6/ITMSProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\ITMSProject.csproj": {
+    "/Users/yarahalghamdi/Developer/TrainingProjects /FirstWeekProjects/ITMSProject-6/ITMSProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\ITMSProject.csproj",
+        "projectUniqueName": "/Users/yarahalghamdi/Developer/TrainingProjects /FirstWeekProjects/ITMSProject-6/ITMSProject.csproj",
         "projectName": "ITMSProject",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\ITMSProject.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\ITMSProject\\ITMSProject\\obj\\",
+        "projectPath": "/Users/yarahalghamdi/Developer/TrainingProjects /FirstWeekProjects/ITMSProject-6/ITMSProject.csproj",
+        "packagesPath": "/Users/yarahalghamdi/.nuget/packages/",
+        "outputPath": "/Users/yarahalghamdi/Developer/TrainingProjects /FirstWeekProjects/ITMSProject-6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/yarahalghamdi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
