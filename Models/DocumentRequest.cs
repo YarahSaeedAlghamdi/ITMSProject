@@ -8,7 +8,7 @@ public class DocumentRequest : IApprovalStatus {
     private Student studentObj;
     private int documentRequestID;
     private DocumentSettings documentSettingObj;
-    private DocumentStatus documentStatus;
+    private Status documentStatus;
     private DateTime createDate;
     private string uploadedDocumentPath;
     private bool isDeleted;
@@ -16,7 +16,7 @@ public class DocumentRequest : IApprovalStatus {
 
     //------------------------------------------------------------------------------------------------
 
-    public enum DocumentStatus
+    public enum Status
     {
         Rejected,
         Approved,
@@ -41,7 +41,7 @@ public class DocumentRequest : IApprovalStatus {
         set => documentSettingObj = value;
     }
 
-    public DocumentStatus DocumentStatus
+    public Status DocumentStatus
     {
         get => documentStatus;
         set => documentStatus = value;
@@ -67,7 +67,7 @@ public class DocumentRequest : IApprovalStatus {
 //-----------------------------------------------------------------------------------------------------
     public void createDocumentRequest(string filePath)
     {
-        documentStatus = DocumentStatus.NewRequest;
+        documentStatus = Status.NewRequest;
         createDate = DateTime.Now;
         uploadedDocumentPath = filePath;
 
@@ -75,7 +75,7 @@ public class DocumentRequest : IApprovalStatus {
     }
     //------------------------------------------------------------------------------------------------
 
-    public void updateDocumentRequest(string newFilePath, DocumentSetting newSetting)
+    public void updateDocumentRequest(string newFilePath, DocumentSettings newSetting)
     {
         if (!string.IsNullOrEmpty(newFilePath))
         {
@@ -114,13 +114,13 @@ public class DocumentRequest : IApprovalStatus {
     // ---------- IapprovalStatus Interface Method Implementations ----------
     public void approveRequest()
     {
-        documentStatus = DocumentStatus.Approved;
+        documentStatus = Status.Approved;
         Console.WriteLine($"[Approved] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
 
     public void rejectRequest()
     {
-        documentStatus = DocumentStatus.Rejected;
+        documentStatus = Status.Rejected;
         Console.WriteLine($"[Rejected] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
 
@@ -135,7 +135,7 @@ public class DocumentRequest : IApprovalStatus {
 
     public void newRequest()
     {
-        documentStatus = DocumentStatus.NewRequest;
+        documentStatus = Status.NewRequest;
         Console.WriteLine($"[New] Request ID: {documentRequestID} | Status: {documentStatus}");
     }
 //-----------------------------------------------------------------------------------------------------
