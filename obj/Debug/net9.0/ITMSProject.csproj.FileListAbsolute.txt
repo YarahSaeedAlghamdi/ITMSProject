@@ -18,3 +18,8 @@ C:\Users\sajaa\OneDrive\Desktop\ITMSProject-2\obj\Debug\net9.0\ITMSProject.Assem
 C:\Users\sajaa\OneDrive\Desktop\ITMSProject-2\obj\Debug\net9.0\ITMSProject.AssemblyInfo.cs
 C:\Users\sajaa\OneDrive\Desktop\ITMSProject-2\obj\Debug\net9.0\ITMSProject.csproj.CoreCompileInputs.cache
 C:\Users\sajaa\OneDrive\Desktop\ITMSProject-2\obj\Debug\net9.0\ITMSProject.sourcelink.json
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.AssemblyInfoInputs.cache
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.AssemblyInfo.cs
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.csproj.CoreCompileInputs.cache
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.sourcelink.json

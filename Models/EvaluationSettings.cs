@@ -15,15 +15,9 @@ namespace Models
         private static readonly List<EvaluationSetting> _all = new();
 
         // ✅ Fixed constructor to use Collage not College
-        public EvaluationSetting(int id, string name, bool isActive, string competency, string definition, Admin createdBy, Collage college)
+        public EvaluationSetting()
         {
-            EvaluationID = id;
-            EvaluationName = name;
-            IsActive = isActive;
-            Competency = competency;
-            Definition = definition;
-            CreatedBy = createdBy;
-            College = college;
+           
         }
 
         public void CreateEvaluationSetting() => _all.Add(this);

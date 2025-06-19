@@ -37,7 +37,7 @@ namespace Models
             EvaluationPeriodTo = evaluationPeriodTo;
             Evaluator = evaluator;
             FileUpload = fileUpload;
-            Status = EvaluationStatus.NewRequest;
+           
         }
 
 
@@ -64,11 +64,17 @@ namespace Models
         }
 
 
-        public List<string> GetEvaluationResult() { }
+        public List<string> GetEvaluationResult(List<string> result)
+{
+    return result;
+}
 
 
 
-        public static EvaluationRequest GetEvaluationRequest(StudentSchedule scheduleFrom) { }
+        public static EvaluationRequest GetEvaluationRequest(StudentSchedule scheduleFrom)
+        {
+            return null;
+        }
 
 
 
