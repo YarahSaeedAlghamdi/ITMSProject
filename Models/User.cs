@@ -57,7 +57,7 @@ namespace Models
             Console.WriteLine("you had logged out successfully ");
         }
 
-        public void navigateToHome()
+        public virtual void navigateToHome()
         {
         }
 
