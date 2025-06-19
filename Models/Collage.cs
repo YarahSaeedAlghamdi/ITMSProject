@@ -1,7 +1,7 @@
 namespace Models
 {
     
-    public class College
+    public class Collage
     {
         // === Private attributes ===
         private int collegeID;
