@@ -1,6 +1,7 @@
 using System;
 
-namespace EvaluationSystem.Models
+
+namespace Models
 {
     public class EvaluateStudent
     {

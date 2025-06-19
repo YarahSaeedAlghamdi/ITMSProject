@@ -1,35 +1,38 @@
-public class DocumentSettings
+namespace Models
 {
-    private int DocumentTypeID;
-    private List<string> DocumentFormat = new List<string>();
-    private int DocumentSize;
-    private string ArabicDocumentName;
-    private string EnglishDocumentName;
-    private string FormURL;
-    private bool IsActiveDocument;
-    private College UserCollege ;
-
-    public void createDocumentSettings()
+    public class DocumentSettings
     {
-        Console.WriteLine("A new document has been created.");
-    }
+        private int DocumentTypeID;
+        private List<string> DocumentFormat = new List<string>();
+        private int DocumentSize;
+        private string ArabicDocumentName;
+        private string EnglishDocumentName;
+        private string FormURL;
+        private bool IsActiveDocument;
+        private College UserCollege;
 
-    public List<DocumentSettings> getDocument(List<DocumentSettings> List)
-    {
-        return new List<DocumentSettings>();
-    }
+        public void createDocumentSettings()
+        {
+            Console.WriteLine("A new document has been created.");
+        }
 
-    public DocumentSettings getDocument(int id)
-    {
-        return new DocumentSettings(); 
-    }
+        public List<DocumentSettings> getDocument(List<DocumentSettings> List)
+        {
+            return new List<DocumentSettings>();
+        }
+
+        public DocumentSettings getDocument(int id)
+        {
+            return new DocumentSettings();
+        }
         public void deleteDocument()
-    {
-        Console.WriteLine("Document has been deleted.");
-    }
+        {
+            Console.WriteLine("Document has been deleted.");
+        }
 
-    public void updateDocument()
-    {
-        Console.WriteLine("Document has been updated.");
+        public void updateDocument()
+        {
+            Console.WriteLine("Document has been updated.");
+        }
     }
 }

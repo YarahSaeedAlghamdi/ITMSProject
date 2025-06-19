@@ -1,54 +1,57 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
-
-public class Period
+namespace Models
 {
-    private string periodCode;
-
-    private string periodName;
-
-    private DateTime startDate = default;
-
-    private DateTime endDate = default;
-
-    private bool isActive;
-
-    private int numberOfmunth;
-
-
-    /// ///////////////////////////////////////////////////////////////////////////////////////
-
-    public void CreatePeriod()
+    public class Period
     {
+        private string periodCode;
 
-    }
+        private string periodName;
 
-    public void UpdatePeriod()
-    {
+        private DateTime startDate = default;
 
-    }
+        private DateTime endDate = default;
 
-    public void DeletePeriod()
-    {
+        private bool isActive;
 
-    }
+        private int numberOfmunth;
 
-    
-    public Period GetPeriod(List<Period> periodList, string periodCode)
-    {
-        foreach (Period p in periodList)
+
+        /// ///////////////////////////////////////////////////////////////////////////////////////
+
+        public void CreatePeriod()
         {
-            if (p.PeriodCode == periodCode)
-                return p;
+
         }
-        return null;
-    }
+
+        public void UpdatePeriod()
+        {
+
+        }
+
+        public void DeletePeriod()
+        {
+
+        }
 
 
-    public List<Period> GetPeriod(List<Period> periodList)
-    {
-        return periodList;
-    }
+        public Period GetPeriod(List<Period> periodList, string periodCode)
+        {
+            foreach (Period p in periodList)
+            {
+                if (p.PeriodCode == periodCode)
+                    return p;
+            }
+            return null;
+        }
+
+
+        public List<Period> GetPeriod(List<Period> periodList)
+        {
+            return periodList;
+        }
+    }
+
 }

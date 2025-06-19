@@ -1,15 +1,13 @@
-public interface IApprovalStatus{
-
-
-    public void approveRequest();
-
-    public void rejectRequest();
-
-    public void returnRequest();
-
-    public void inProgress();
-
-    public void newRequest();
+namespace Models
+{
+    public interface IApprovalStatus
+    {
+        void ApproveRequest();
+        void RejectRequest();
+        void ReturnRequest();
+        void InProgress();
+        void NewRequest();
+    }
 }
 
 

@@ -1,21 +1,24 @@
-public class VacationSettings
+namespace Models
 {
-    private int maxDays;
-    private int minDays;
-    private string vacationName;
-    private int numberOfVacations;
-    private bool isRepeatVacationPeriod;
-    private bool isActiveVacation;
+     public class VacationSettings
+     {
+          private int maxDays;
+          private int minDays;
+          private string vacationName;
+          private int numberOfVacations;
+          private bool isRepeatVacationPeriod;
+          private bool isActiveVacation;
 
-    public void createVacation()
-    {
-         }
-
-    public void updateVacation()
-    {
-         }
-
-    public void deleteVacation()
-    {
+          public void createVacation()
+          {
           }
+
+          public void updateVacation()
+          {
+          }
+
+          public void deleteVacation()
+          {
+          }
+     }
 }

@@ -1,46 +1,49 @@
 using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 using System.Linq;
 
 
-public class Hospital
+namespace Models
 {
-    private string hospitalCode;
-    private string hospitalName;
-
-
-    /// ///////////////////////////////////////////////////////////////////////////////////////
-
-    public void CreateHospital()
+    public class Hospital
     {
-
-    }
-
-    public void UpdateHospital()
-    {
-
-    }
-
-    public void DeleteHospital()
-    {
-
-    }
+        private string hospitalCode;
+        private string hospitalName;
 
 
-    public List<Hospital> GetYear(List<Hospital> hospitalList)
-    {
-        return hospitalList;
-    }
-    
-    
-    public Hospital GetHospital(List<Hospital> hospitalList, string hospitalCode)
-    {
-        foreach (Hospital h in hospitalList)
+        /// ///////////////////////////////////////////////////////////////////////////////////////
+
+        public void CreateHospital()
         {
-            if (h.HospitalCode == hospitalCode)
-                return h;
-        }
-        return null;
-    }
 
+        }
+
+        public void UpdateHospital()
+        {
+
+        }
+
+        public void DeleteHospital()
+        {
+
+        }
+
+
+        public List<Hospital> GetYear(List<Hospital> hospitalList)
+        {
+            return hospitalList;
+        }
+
+
+        public Hospital GetHospital(List<Hospital> hospitalList, string hospitalCode)
+        {
+            foreach (Hospital h in hospitalList)
+            {
+                if (h.HospitalCode == hospitalCode)
+                    return h;
+            }
+            return null;
+        }
+
+    }
 }

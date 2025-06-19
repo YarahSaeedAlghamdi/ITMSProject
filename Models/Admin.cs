@@ -1,7 +1,10 @@
-public class Admin : User
+namespace Models
 {
-    public override void navigateToHome()
+    public class Admin : User
     {
+        public override void navigateToHome()
+        {
 
+        }
     }
 }

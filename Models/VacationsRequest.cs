@@ -1,65 +1,69 @@
 
-
-public class VacationRequest : IApprovalStatus
+namespace Models
 {
-    
-    private StudentSchedule studentSchedule;
-    private VacationSettings vacationSettings;
-    private DateTime startDate;
-    private DateTime endDate;
-    private DateTime createVacationDate;
-    private Student student;
-    private int requestVacationID;
-    private StatusEnum status;
-
-    public enum StatusEnum
+    public class VacationRequest : IApprovalStatus
     {
-        NewRequest,
-        Approved,
-        Rejected
-    }
 
-    public void createVacationRequest()
-    {
-         }
+        private StudentSchedule studentSchedule;
+        private VacationSettings vacationSettings;
+        private DateTime startDate;
+        private DateTime endDate;
+        private DateTime createVacationDate;
+        private Student student;
+        private int requestVacationID;
+        private StatusEnum status;
 
-    public VacationRequest getVacationRequest()
-    {
-        return this;
+        public enum StatusEnum
+        {
+            NewRequest,
+            Approved,
+            Rejected
         }
 
-    public void deleteVacationRequest()
-    {
+        public void createVacationRequest()
+        {
         }
 
-    public void cancelVacationRequest()
-    {
-       
+        public VacationRequest getVacationRequest()
+        {
+            return this;
+        }
+
+        public void deleteVacationRequest()
+        {
+        }
+
+        public void cancelVacationRequest()
+        {
+
+        }
+
+        public void ApproveRequest()
+        {
+
+        }
+
+        public void RejectRequest()
+        {
+
+        }
+
+        public void InProgress()
+        {
+
+        }
+
+        public void ReturnRequest()
+        {
+
+        }
+
+        public void NewRequest()
+        {
+
+
+        }
+
     }
-
-    public void approveRequest()
-    {
-        
-    }
-
-    public void rejectRequest()
-    {
-       
-    }
-
-    public void returnRequest()
-    {
-        
-    } 
-
-    public void newRequest()
-    {
-       
-    }
-
-    public void inProgress()
-    {
-    }  
-
 }
 

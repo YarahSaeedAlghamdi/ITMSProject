@@ -1,0 +1,5 @@
+C:\Users\sosoq\Desktop\ITMSProject\obj\Debug\net9.0\ITMSProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sosoq\Desktop\ITMSProject\obj\Debug\net9.0\ITMSProject.AssemblyInfoInputs.cache
+C:\Users\sosoq\Desktop\ITMSProject\obj\Debug\net9.0\ITMSProject.AssemblyInfo.cs
+C:\Users\sosoq\Desktop\ITMSProject\obj\Debug\net9.0\ITMSProject.csproj.CoreCompileInputs.cache
+C:\Users\sosoq\Desktop\ITMSProject\obj\Debug\net9.0\ITMSProject.sourcelink.json

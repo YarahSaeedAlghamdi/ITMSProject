@@ -1,4 +1,4 @@
-namespace EvaluationSystem.Models
+namespace Models
 {
     public class College
     {

@@ -1,25 +1,28 @@
-public class User
+namespace Models
 {
-    private int UserID;
-    private string UserRole;
-    private string UserName;
-    private string UserEmail;
-    private string UserPassword;
-
-    public bool Login(string username, string password)
+    public class User
     {
-        return (username == UserName) && (password == UserPassword);
-    }
+        private int UserID;
+        private string UserRole;
+        private string UserName;
+        private string UserEmail;
+        private string UserPassword;
 
-    public void LogOut()
-    {
+        public bool Login(string username, string password)
+        {
+            return (username == UserName) && (password == UserPassword);
+        }
 
-        Console.WriteLine("you had logged out successfully ");
-    }
-    public override void navigateToHome()
-    {
-       
-    }
-    
+        public void LogOut()
+        {
 
-} 
+            Console.WriteLine("you had logged out successfully ");
+        }
+        public override void navigateToHome()
+        {
+
+        }
+
+
+    }
+}

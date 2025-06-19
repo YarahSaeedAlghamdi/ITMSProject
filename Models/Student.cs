@@ -1,11 +1,14 @@
-public class Student : User
+namespace Models
 {
-    private string StudentPhoneNumber;
-    private double StudentGPA;
-    private int StudentNumber; // SSN
-
-    public override void navigateToHome()
+    public class Student : User
     {
-       
+        private string StudentPhoneNumber;
+        private double StudentGPA;
+        private int StudentNumber; // SSN
+
+        public override void navigateToHome()
+        {
+
+        }
     }
 }
