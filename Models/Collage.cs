@@ -1,5 +1,6 @@
 namespace Models
 {
+    
     public class College
     {
         // === Private attributes ===
