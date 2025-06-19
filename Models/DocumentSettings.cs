@@ -2,7 +2,7 @@ namespace Models
 {
     public class DocumentSettings
     {
-        private int DdocumentTypeID;
+        private int documentTypeID;
         private List<string> DocumentFormat = new List<string>();
         private int DocumentSize;
         private string ArabicDocumentName;
@@ -13,8 +13,8 @@ namespace Models
 
       public int DocumentTypeID
     {
-        get => DdocumentTypeID;
-        set => DdocumentTypeID = value;
+        get => documentTypeID;
+        set => documentTypeID = value;
     }
 
         public void createDocumentSettings()
