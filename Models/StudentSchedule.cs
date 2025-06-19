@@ -50,27 +50,27 @@ namespace Models
 
         // ميثودات الانترفيس
 
-        public void ApproveRequest()
+        public void approveRequest()
         {
 
         }
 
-        public void RejectRequest()
+        public void rejectRequest()
         {
 
         }
 
-        public void InProgress()
+        public void inProgress()
         {
 
         }
 
-        public void ReturnRequest()
+        public void returnRequest()
         {
 
         }
 
-        public void NewRequest()
+        public void newRequest()
         {
 
 
