@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\sajaa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\ITMSProject-1\\ITMSProject.csproj",
+      "projectUniqueName": "C:\\Users\\sajaa\\OneDrive\\Desktop\\ITMSProject-2\\ITMSProject.csproj",
       "projectName": "ITMSProject",
-      "projectPath": "C:\\Users\\USER\\Desktop\\ITMSProject-1\\ITMSProject.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\ITMSProject-1\\obj\\",
+      "projectPath": "C:\\Users\\sajaa\\OneDrive\\Desktop\\ITMSProject-2\\ITMSProject.csproj",
+      "packagesPath": "C:\\Users\\sajaa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sajaa\\OneDrive\\Desktop\\ITMSProject-2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sajaa\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
