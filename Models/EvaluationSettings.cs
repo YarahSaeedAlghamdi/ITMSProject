@@ -42,4 +42,3 @@ public class EvaluationSetting
         _all.Find(e => e.EvaluationID == id);
 }
 
-}
