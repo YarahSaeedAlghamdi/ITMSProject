@@ -24,7 +24,7 @@ namespace Models
         {
 
         }
-        public List<Hospital> GetYear(List<Hospital> hospitalList)
+        public List<Hospital> GetHospital(List<Hospital> hospitalList)
         {
             return hospitalList;
         }
