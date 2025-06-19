@@ -23,3 +23,13 @@ C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.Assem
 C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.AssemblyInfo.cs
 C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.csproj.CoreCompileInputs.cache
 C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.sourcelink.json
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\bin\Debug\net9.0\ITMSProject.exe
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\bin\Debug\net9.0\ITMSProject.deps.json
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\bin\Debug\net9.0\ITMSProject.runtimeconfig.json
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\bin\Debug\net9.0\ITMSProject.dll
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\bin\Debug\net9.0\ITMSProject.pdb
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.dll
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\refint\ITMSProject.dll
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.pdb
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ITMSProject.genruntimeconfig.cache
+C:\Users\sajaa\OneDrive\Desktop\ITMSProject-3\obj\Debug\net9.0\ref\ITMSProject.dll
